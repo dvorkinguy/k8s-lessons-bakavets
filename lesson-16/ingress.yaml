@@ -8,11 +8,11 @@ metadata:
 spec:
   tls:
   - hosts:
-    - app-1.bakavets.com
-    - app-2.bakavets.com
+    - app.notjustdevops.com
+    - simple.notjustdevops.com
     secretName: app-tls
   rules:
-   - host: app-1.bakavets.com
+   - host: app.notjustdevops.com
      http:
         paths:
           - pathType: Prefix
@@ -22,13 +22,13 @@ spec:
                 name: kuber-service-1
                 port: 
                   number: 80
-   - host: app-2.bakavets.com
+   - host: simple.notjustdevops.com
      http:
         paths:
           - pathType: Prefix
             path: /
             backend:
               service:
-                name: kuber-service-2
+                name: simple
                 port: 
                   number: 80
