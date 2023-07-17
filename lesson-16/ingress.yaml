@@ -4,12 +4,15 @@ metadata:
   name: main-ingress
   annotations:
     kubernetes.io/ingress.class: nginx
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
 spec:
   tls:
   - hosts:
     - app.notjustdevops.com
     - simple.notjustdevops.com
+    - java.notjustdevops.com
+    - notjustdevops.com
+
     secretName: app-tls
   rules:
    - host: app.notjustdevops.com
@@ -32,3 +35,25 @@ spec:
                 name: simple
                 port: 
                   number: 80
+   - host: java.notjustdevops.com
+     http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: java
+                port: 
+                  number: 80
+   - host: notjustdevops.com
+     http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: main
+                port: 
+                  number: 80
+
+    
