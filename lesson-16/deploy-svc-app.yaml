@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: dvorkinguy/app-flask-app:3.1.0
+        image: dvorkinguy/simple-flask-app:3.1.0
         ports:
         - containerPort: 5000
 ---
