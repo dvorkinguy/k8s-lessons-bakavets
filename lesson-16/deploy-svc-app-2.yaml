@@ -32,4 +32,5 @@ spec:
       port: 80
       targetPort: 8000
   type: ClusterIP
+  # demo
 
