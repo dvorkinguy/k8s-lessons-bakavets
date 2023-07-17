@@ -1,3 +1,5 @@
+# eksctl create cluster -f njd28b-cluster.yaml 
+#
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
