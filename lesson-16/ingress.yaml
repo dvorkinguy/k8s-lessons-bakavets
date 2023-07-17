@@ -19,7 +19,7 @@ spec:
             path: /
             backend:
               service:
-                name: kuber-service-1
+                name: app
                 port: 
                   number: 80
    - host: simple.notjustdevops.com
