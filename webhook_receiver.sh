@@ -24,4 +24,4 @@ git pull origin main
 # Additional actions or notifications (optional)
 # ...
 
-echo "Webhook received and updates pulled."
+echo "Webhook received and updates pulled ."
