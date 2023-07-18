@@ -12,7 +12,7 @@ The Chart File Structure: https://helm.sh/docs/topics/charts/#the-chart-file-str
 
 Predefined Values: https://helm.sh/docs/topics/charts/#predefined-values
 
-Install App:
+Install  App:
 
 ```helm install demo-app ./demo-chart```
 
