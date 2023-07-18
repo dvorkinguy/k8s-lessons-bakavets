@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set your webhook secret
-WEBHOOK_SECRET="6a919e5ab5f9a504a8e0feee4f1fbe876dd8beda21487d410e21e31d4c00de9b"
+WEBHOOK_SECRET="65483f2948733a01c8d668b53a39cdd7474c03bf"
 
 # Read the payload and extract the signature and event type
 read -r HEADER
